@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   <main>
+       <nav class='navBar'>
+           <h1>Samruddhi Jadhav Portfolio</h1>
+           <div>
+               <a href="#aboutme">About Me</a>
+               <a href="#skills">Skills</a>
+               <a href="#projects">Projects</a>
+               <a href="#interest">interest</a>
+               <a href="#contactform">Let's Connect</a>
+           </div>
+         </nav>
+         <section class='heroSection'>
+             <img class='profileImage' src="/images/profile.jpg">
+             <div class='heroSectionDetails'>
+                 <h1>Samruddhi Jadhav</h1>
+                 <h3>Web Development</h3>
+             </div>
+         </section>
+         <section class='aboutMe' id='aboutMe'>
+             <h1>What I Do...</h1>
+             <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in minima excepturi cum impedit, expedita ad eaque. Vitae tempore repellendus perferendis unde ab ut autem dolorum non corrupti, quia provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in minima excepturi cum impedit, expedita ad eaque. Vitae tempore repellendus perferendis unde ab ut autem dolorum non corrupti, quia provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in minima excepturi cum impedit, expedita ad eaque. Vitae tempore repellendus perferendis unde ab ut autem dolorum non corrupti, quia provident.
+             </p>
+         </section>
+         <section class='skillsAndProjects'>
+             <div class='skills' id='skills'>
+                 <h1 class='cardHeading'>Skills</h1>
+                 <img src='/images/html.svg' tittle='HTML'>
+                 <img src='/images/css.svg' tittle='CSS'>
+                 <img src='/images/javascript.svg' tittle='Javascript'>
+                 <img src='/images/python.svg' tittle='Python'>
+             </div>
+             <div class='projects' id='projects'>
+                 <h1 class='cardHeading'>Projects</h1>
+                 <div class='projectContainer'>
+                     <img src='/images/css1.svg'>
+                     <div class='projectDescription'>
+                         <h1>Portfolio Project</h1>
+                         <h4>This is my first project which is done by this seven days bootcamp.</h4>
+                     </div><br/>
+                     <img src='/images/nlc.jpg'>
+                     <div class='projectDescription'>
+                        <h1>National level Project</h1>
+                        <h4>This is my national level project in which i awarded 1st price topic PRODUCING FUEL FROM PLASTIC WASTE
+                        </h4>
+                    </div>
+
+                 </div>
+             </div>
+         </section>
+         <section class='interest' id='interest'>
+            <h1>My Interest</h1>
+            <p>
+               I want to become a Webdeveloper because it is Creative,Attractive,Practical and Functonal trade.There are opportunities anywhere in the world.It's Artistic and Beautiful.I Want to become both Frontend and Backend Developer.So please continue your bootcamp on topics of Javascript,NodeJs,
+               React,etc....
+            </p>
+        </section>
+         <section class='contactForm' id='contactForm'>
+            <h1>Let's Connect</h1>
+            <div class='formGroup'>
+                <label for='name'>Enter Full Name</label><br/>
+                <input type="text" id="name" placeholder="Full Name"/>
+            </div>
+            <div class='formGroup'>
+                <label for='email'>Email</label><br/>
+                <input type="text" id="email" placeholder="email"/>
+            </div>
+            <div class='formGroup'>
+                <label for='message'>Message</label><br/>
+                <textarea placeholder="Send some message!" id="message" name="w3review"
+                rows="4" cols="50"></textarea>
+            </div>
+            <button class="submitButton" onClick={submit()}>Connect</button>
+         </section>
+   </main> 
+</body>
+</html>
